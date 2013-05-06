@@ -1,0 +1,514 @@
+/*
+Theme name: Andrea Puglia
+Theme URI: http://andreapuglia.com.br/
+Author: MG Studio
+Author URI: http://mgstudio.com.br/
+Version: Inverno 2013
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,400italic|Scada:400italic,400);
+
+/* Default */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #f7f7f7;
+	border-top: 3px solid #f0706f;
+	color: #454545;
+	font: 14px/1.5em sans-serif;
+}
+img, fieldset { border: 0 none }
+iframe {
+	border: 0 none;
+	margin: 0;
+	overflow: hidden;
+}
+a {
+	text-decoration: none;
+
+	-webkit-transition: all 0.25s ease-out;
+	   -moz-transition: all 0.25s ease-out;
+		 -o-transition: all 0.25s ease-out;
+			transition: all 0.25s ease-out;
+}
+b {
+	color: #f0706f;
+	font-weight: normal;
+}
+hr, label, .hide { display: none }
+
+.block { display: block }
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+.cf:after { clear: both }
+.cf { *zoom: 1 }
+
+::selection {
+	background: #f0706f;
+	color: #fff;
+}
+::-moz-selection {
+	background: #f0706f;
+	color: #fff;
+}
+
+/* Head / Foot */
+
+#head {
+	height: 130px;
+	margin: 0 auto;
+	position: relative;
+	width: 960px;
+}
+#logo {
+	float: left;
+	padding-top: 33px;
+}
+#nav {
+	font-family: 'Scada', sans-serif;
+	text-transform: uppercase;
+}
+#menu {
+	float: right;
+	padding-top: 60px;
+}
+.menu-item {
+	float: left;
+	list-style: none;
+	margin-left: 40px;
+}
+.menu-item:first-child { margin-left: 0 }
+.menu-item a,
+.cat-item a { color: #454545 }
+.menu-item a:hover,  .cat-item a:hover,
+.menu-item a:focus,  .cat-item a:focus,
+.menu-item a:active, .cat-item a:active,
+.current_cat-item a,
+.current-menu-item a,
+.current-page-ancestor a { color: #f0706f }
+.categories {
+	border-top: 1px dashed #8c8c8c;
+	clear: both;
+	padding-top: 10px;
+	text-align: right;
+	width: 100%;
+}
+.cat-item {
+	display: inline;
+	list-style: none;
+	margin-left: 22px;
+}
+#social {
+	float: right;
+	position: absolute;
+	right: 0;
+	top: 17px;
+}
+.social-item {
+	float: left;
+	list-style: none;
+	margin-left: 2px;
+}
+.social-item a {
+	background: #454545;
+	display: block;
+}
+.social-item a:hover,
+.social-item a:focus,
+.social-item a:active { background: #f0706f }
+
+#foot {
+	background: #f1edde;
+	clear: both;
+	font: italic 15px 'Lato', sans-serif;
+	padding: 10px 0;
+	text-align: center;
+}
+
+#compra-online {
+	font: 14px 'Lato', sans-serif;
+	color: #fff;
+	background: #454545;
+	display: block;
+	float: right;
+	position: absolute;
+	right: 66px;
+	top: 17px;
+	padding: 4px 7px;
+}
+
+#compra-online:hover,
+#compra-online:focus,
+#compra-online:active { background: #f0706f }
+
+/* Body */
+
+#body {
+	margin: 0 auto 20px;
+	width: 960px;
+}
+.entry-title {
+	color: #f0706f;
+	font: 104px 'Scada', sans-serif;
+	line-height: 1.5em;
+	text-transform: uppercase;
+}
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.address h2 {
+	font-family: 'Scada', sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	margin-bottom: 1em;
+	text-transform: uppercase;
+}
+.entry-content p,
+.entry-content ul,
+.entry-content ol,
+.address address {
+	display: block;
+	font-family: 'Scada', sans-serif;
+	font-style: normal;
+	margin-bottom: 1.5em;
+}
+
+/* A Marca */
+
+.page-a-marca .hentry { display: inline }
+.page-a-marca .entry-title,
+.page-template-template-franquia-php .entry-title,
+.page-template-template-lojas-php .entry-title,
+.page-contato .entry-title,
+.page-newsletter .entry-title {
+	background: url(img/head-marca.jpg) no-repeat;
+	height: 528px;
+	margin-bottom: 25px;
+	padding: 0 15px;
+}
+.page-a-marca .entry-content p {
+	font: 15px/2em 'Lato', sans-serif;
+	margin: 0 15px;
+}
+.entry-content .quotes,
+.page-a-marca .entry-content .quotes {
+	background: #f6dcdc url(img/quotes.png) no-repeat center center;
+	font: 29px 'Lato', sans-serif;
+	letter-spacing: -.05em;
+	margin: 0 0 15px;
+	padding: 40px 15px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/* Campanha */
+
+.thumbnails {
+	margin-left: -7px;
+	width: 973px;
+}
+.thumb {
+	float: left;
+	list-style: none;
+	margin: 0 7px 10px;
+
+	-webkit-transition: all 0.25s ease-out;
+	   -moz-transition: all 0.25s ease-out;
+		 -o-transition: all 0.25s ease-out;
+			transition: all 0.25s ease-out;
+}
+.thumbnails:hover .thumb { opacity: .3 }
+.thumbnails:hover .thumb:hover { opacity: 1 }
+.preview {
+	background: url(img/preloader.gif) no-repeat center center;
+	margin: 0 auto 22px;
+	position: relative;
+}
+#container { margin: 0 auto }
+.prev,
+.next {
+	border: 0 none;
+	cursor: pointer;
+	display: block;
+	height: 100%;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	width: 60px;
+}
+.prev {
+	background: url(img/arrows.png) no-repeat left center;
+	left: 10px;
+}
+.next {
+	background: url(img/arrows.png) no-repeat right center;
+	right: 10px;
+}
+.prev span,
+.next span { display: none }
+.info {
+	bottom: 0;
+	font: 20px/1.3em 'Scada', sans-serif;
+	left: 60px;
+	padding: 5px 10px;
+	position: absolute;
+}
+
+/* Franquia */
+
+.page-template-template-franquia-php .entry-title {
+	background: url(img/head-franquia.jpg) no-repeat;
+	height: 590px;
+}
+.page-template-template-franquia-php .entry-content {
+	background: #fefaee;
+	float: right;
+	min-height: 370px;
+	padding: 20px 30px 0;
+	width: 571px;
+}
+.pages-nav {
+	background: #f6e3e3;
+	float: left;
+	font: 20px/1.5em 'Scada', sans-serif;
+	padding: 0.75em 22px;
+	width: 262px;
+}
+.pages-nav .page_item {
+	display: inline;
+	list-style: none;
+}
+.pages-nav .page_item a {
+	color: #454545;
+	display: block;
+	padding: 0.75em 0;
+	text-align: right;
+	text-transform: uppercase;
+}
+.pages-nav .page_item a:hover,
+.pages-nav .page_item a:focus,
+.pages-nav .page_item a:active,
+.pages-nav .current_page_item a { color: #f0706f }
+
+
+/* Lojas */
+
+.page-template-template-lojas-php .entry-title {
+	background: url(img/head-lojas.jpg) no-repeat;
+	height: 445px;
+}
+.page-template-template-lojas-php .entry-content { margin-left: 337px }
+.address {
+	clear: left;
+	float: left;
+	padding: 22px;
+	padding-left: 0;
+	text-align: right;
+	width: 292px;
+}
+.address h2 { margin-bottom: 2px }
+.entry-content iframe {
+	border: 4px solid #fefaee;
+	display: block;
+}
+
+/* Formulários */
+
+.page-contato .entry-title,
+.page-newsletter .entry-title {
+	background: url(img/head-contato.jpg) no-repeat;
+	height: 598px;
+}
+.sideinfo {
+	background: #f6e3e3;
+	float: right;
+	padding: 20px 15px 0;
+	text-align: right;
+	width: 284px;
+}
+.wpcf7-form {
+	background: #fefaee;
+	float: left;
+	min-height: 115px;
+	padding: 26px;
+	padding-right: 17px;
+	width: 580px;
+}
+.page-template-template-franquia-php .wpcf7-form {
+	padding-left: 0;
+	width: 580px;
+}
+.wpcf7-form legend { font-family: 'Scada', sans-serif }
+.wpcf7-form .field {
+	float: left;
+	margin: 0 9px 9px 0;
+	width: 281px;
+}
+.wpcf7-form .field-nome,
+.wpcf7-form .field-email { padding-top: 25px }
+.wpcf7-form .field-mensagem { width: 571px }
+.wpcf7-form .field-nascimento,
+.wpcf7-form .field-celular,
+.wpcf7-form .field-identidade,
+.wpcf7-form .field-orgao,
+.wpcf7-form .field-cep,
+.wpcf7-form .field-cpf,
+.wpcf7-form .field-residencial,
+.wpcf7-form .field-comercial { width: 136px }
+.wpcf7-form .text,
+.wpcf7-form .area {
+	background: #fdece1;
+	border-color: #fdece1;
+	font-size: 14px;
+	font-style: normal;
+	line-height: 28px;
+	width: 100%;
+}
+.wpcf7-form .text:focus,
+.wpcf7-form .area:focus { background: #fff }
+.wpcf7-form .wpcf7-not-valid { border-color: #f0706f }
+
+.wpcf7-form .submit {
+	clear: both;
+	margin: 0 9px 0 0;
+	position: relative;
+	text-align: right;
+}
+.wpcf7-form .button {
+	background: #f0706f;
+	border: 0 none;
+	color: #fefaee;
+	cursor: pointer;
+	font: 33px/44px 'Scada', sans-serif;
+	padding: 0 10px;
+	text-transform: uppercase;
+
+	-webkit-transition: all 0.25s ease-out;
+	   -moz-transition: all 0.25s ease-out;
+		 -o-transition: all 0.25s ease-out;
+			transition: all 0.25s ease-out;
+}
+.wpcf7-form .button:hover,
+.wpcf7-form .button:focus {
+	background: #fefaee;
+	color: #f0706f;
+}
+.ajax-loader {
+	display: block;
+	left: 425px;
+	position: absolute;
+	top: 14px;
+}
+.wpcf7-response-output {
+	float: left;
+	margin-top: -44px;
+	width: 300px;
+}
+.wpcf7-not-valid-tip { display: none !important }
+
+::-webkit-input-placeholder { color: #454545 }
+:-moz-placeholder { color: #454545 }
+::-moz-placeholder { color: #454545 }
+:-ms-input-placeholder { color: #454545 }
+
+/* Home */
+
+.home-content,
+.page-a-marca .entry-content {
+	float: left;
+	margin-bottom: 23px;
+	width: 570px;
+}
+.widgets {
+	float: right;
+	margin-bottom: 23px;
+	width: 362px;
+}
+.widget { margin-bottom: 4px }
+.widget-newsletter {
+	background: #d1f0e8;
+	min-height: 226px;
+	padding: 10px 15px 0;
+}
+.widget-newsletter legend {
+	font: 40px 'Lato', sans-serif;
+	text-align: center;
+	width: 100%;
+}
+.widget-newsletter .intro {
+	font: italic 15px 'Lato', sans-serif;
+	padding: 16px 0 28px;
+}
+.text,
+.area {
+	background: #fff;
+	border: 1px solid #fff;
+	display: block;
+	font: italic 15px 'Scada', sans-serif;
+	line-height: normal !important;
+	padding: 5px 8px;
+	
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+.widget-newsletter .text {
+	float: left;
+	margin-bottom: 15px;
+	width: 240px;
+}
+.widget-newsletter .button {
+	background: #1f1f1e;
+	border: 0 none;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font: italic 15px/65px 'Scada', sans-serif;
+	margin-left: 252px;
+	text-transform: uppercase;
+	width: 80px;
+}
+.instagram {
+	border-top: 1px dashed #8c8c8c;
+	clear: both;
+	min-height: 100px;
+	padding: 16px 0 30px;
+	position: relative;
+}
+.instagram .heading {
+	float: left;
+	font: 40px/1em 'Lato', sans-serif;
+	margin-bottom: 10px;
+}
+.instagram .intro {
+	clear: left;
+	font: 300 15px 'Lato', sans-serif;
+	width: 295px;
+}
+.instagram-list {
+	position: absolute;
+	right: 0;
+	top: 16px;
+}
+.instagram-item {
+	float: left;
+	list-style: none;
+	margin-left: 12px;
+}
+.instagram-item img {
+	border: 4px solid #ebebeb;
+	display: block;
+
+	-webkit-box-shadow: 1px 1px 1px 0px #666;
+			box-shadow: 1px 1px 1px 0px #666;
+	-webkit-border-radius: 3px;
+			border-radius: 3px;
+	background-clip: padding-box;
+}
+
